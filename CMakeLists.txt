@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 4.0)
-project(Template)
+project(Proyecto_1_Progra_2)
 
 set(CMAKE_CXX_STANDARD 20)
 
-include_directories(src)
-add_subdirectory(src)
+add_executable(Proyecto_1_Progra_2 main.cpp)
