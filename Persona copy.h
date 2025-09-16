@@ -6,7 +6,7 @@
 #define PROYECTO_1_BORRADOR_PERSONA_H
 
 #include "InterfazPersona.h"
-#include "../src/Archivos/json.h"
+//#include "../src/Archivos/json.h"
 
 class Persona final : public InterfazPersona {
 private:
