@@ -2,7 +2,7 @@
 // Created by Christopher Blanco on 16/9/25.
 //
 
-#include "../includes/Persona/Persona.h"
+#include "Persona.h"
 
 Persona::Persona(const string& nombre, int id, int indicePrioridad)
          : nombre(nombre), id(id), indicePrioridad(indicePrioridad) {}
