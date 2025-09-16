@@ -2,9 +2,7 @@
 // Created by Christopher Blanco on 16/9/25.
 //
 
-#include <utility>
-
-#include "../includes/Persona.h"
+#include "Persona.h"
 
 Persona::Persona(const string& nombre, int id, int indicePrioridad)
     : InterfazPersona(nombre, id, indicePrioridad) {}
