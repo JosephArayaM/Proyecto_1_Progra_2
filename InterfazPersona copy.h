@@ -10,7 +10,7 @@ using namespace std;
 
 class InterfazPersona {
 public:
-    virtual ~InterfazPersona();
+    virtual ~InterfazPersona() = default;
 
     [[nodiscard]] virtual string getNombre() const = 0;
     virtual void setNombre(const string& newNombre) = 0;
