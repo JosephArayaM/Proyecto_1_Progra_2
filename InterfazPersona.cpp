@@ -2,7 +2,7 @@
 // Created by Christopher Blanco on 17/9/25.
 //
 
-#include "../includes/Persona/InterfazPersona.h"
+#include "InterfazPersona.h"
 
 InterfazPersona::InterfazPersona(const string& nombre, bool indicePrioridad)
             : nombre(nombre), indicePrioridad(indicePrioridad) {}
