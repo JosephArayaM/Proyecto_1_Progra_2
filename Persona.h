@@ -6,7 +6,7 @@
 #define PROYECTO_1_TEST_PERSONA_H
 
 #include "InterfazPersona.h"
-#include "../JSON/json.h"
+#include "json.h"
 
 class Persona final : public InterfazPersona {
 public:
