@@ -5,8 +5,8 @@
 #ifndef PROYECTO_1_TEST_INTERFAZPERSONA_H
 #define PROYECTO_1_TEST_INTERFAZPERSONA_H
 
-#include "../JSON/json.h"
-#include "../Utilidades.h"
+#include "json.h"
+#include "Utilidades.h"
 
 class InterfazPersona {
 protected:
