@@ -1,0 +1,28 @@
+//
+// Created by Christopher Blanco on 16/9/25.
+//
+
+#include "../includes/Persona/Persona.h"
+#include "../includes/Lista/Lista.h"
+#include "../includes/JSON/ArchivosJSON.h"
+
+int main() {
+    auto* p1 = new Persona("chris", true);
+
+    auto* l1 = new Lista<InterfazPersona*>();
+    auto* l2 = new Lista<InterfazPersona*>();
+
+    l1->agregarNodo(p1);
+    ArchivosJSON::save("PersonaTEST.json", l1);
+
+    cout << *l1 << endl;
+    cout << *l2 << endl;
+
+    ArchivosJSON::load("PersonaTEST.json", l2);
+
+    cout << *l2 << endl;
+
+    delete l1;
+    delete l2;
+    return 0;
+}

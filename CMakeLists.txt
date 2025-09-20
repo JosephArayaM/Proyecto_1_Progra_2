@@ -1,6 +1,17 @@
-cmake_minimum_required(VERSION 4.0)
-project(Proyecto_1_Progra_2)
+set(BINARY ${CMAKE_PROJECT_NAME})
 
-set(CMAKE_CXX_STANDARD 20)
+file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true *.cpp)
 
-add_executable(Proyecto_1_Progra_2 main.cpp)
+set(SOURCES ${SOURCES})
+
+add_executable(${BINARY}_run ${SOURCES})
+
+add_library(${BINARY}_lib STATIC ${SOURCES}
+        ../includes/Persona/InterfazPersona.h
+        ../includes/Persona/Persona.h
+        ../includes/Lista/Nodo.h
+        ../includes/Lista/Lista.h
+        ../includes/Utilidades.h
+        ../includes/JSON/ArchivosJSON.h
+        ../includes/JSON/json.h
+)
