@@ -2,9 +2,9 @@
 // Created by Christopher Blanco on 16/9/25.
 //
 
-#include "../includes/Persona/Persona.h"
-#include "../includes/Lista/Lista.h"
-#include "../includes/JSON/ArchivosJSON.h"
+#include "Persona.h"
+#include "Lista.h"
+#include "ArchivosJSON.h"
 
 int main() {
     auto* p1 = new Persona("chris", true);
