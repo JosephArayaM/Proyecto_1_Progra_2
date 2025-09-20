@@ -6,9 +6,9 @@
 #define PROYECTO_1_TEST_ARCHIVOSJSON_H
 
 #include "json.h"
-#include "../Lista/Lista.h"
-#include "../Utilidades.h"
-#include "../Persona/Persona.h"
+#include "Lista/Lista.h"
+#include "Utilidades.h"
+#include "Persona/Persona.h"
 
 class ArchivosJSON {
 public:
