@@ -10,7 +10,7 @@
 
 class Persona final : public InterfazPersona {
 public:
-    explicit Persona(const string& nombre = "", bool indicePrioridad = false);
+    explicit Persona(const string& nombre = "", const string& tipoPersona = "", int edad = 0, bool indicePrioridad = false);
     ~Persona() override;
 
     [[nodiscard]] Json::Value toJson() const override;
@@ -18,8 +18,10 @@ public:
 
     friend std::ostream & operator<<(std::ostream &os, const Persona& obj) {
         return os
-                 << "Nombre: " << obj.nombre << "\n"
-                 << "Indice de prioridad: " << obj.indicePrioridad << "\n";
+        << "Nombre: " << obj.nombre << "\n"
+        << "Tipo de persona: " << obj.tipoPersona << endl
+        << "Edad: " << obj.edad << "\n"
+        << "Indice de prioridad: " << obj.indicePrioridad << "\n";
     }
 };
 
