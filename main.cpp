@@ -7,7 +7,7 @@
 #include "ArchivosJSON.h"
 
 int main() {
-    auto* p1 = new Persona("chris", true);
+    auto* p1 = new Persona("chris", "mujer embarazada", 21, true);
 
     auto* l1 = new Lista<InterfazPersona*>();
     auto* l2 = new Lista<InterfazPersona*>();
